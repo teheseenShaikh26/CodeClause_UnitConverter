@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <div id="calculator">
+    <h1>Length Calculator</h1>
+
+    <div class="innercontainer">
+      <form>
+        <label>Enter Length:</label>
+        <input placeholder="Input" type="text" id="lengthInput" style="text-align: center;">
+        <br><br>
+        <div class="fromto">
+          <label for="fromUnit">From : </label>
+
+          <select id="fromUnit">
+            <option value="millimeter">millimeter</option>
+            <option value="centimeter">centimeter</option>
+            <option value="meter">meter</option>
+            <option value="kilometer">kilometer</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+          </select>
+          <br><br>
+
+          <label>To :</label>
+
+          <select id="toUnit">
+            <option value="millimeter">millimeter</option>
+            <option value="centimeter">centimeter</option>
+            <option value="meter">meter</option>
+            <option value="kilometer">kilometer</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label>Result:</label>
+          <input placeholder="Output" type="text" id="lo" readonly style="text-align: center;">
+        </div>
+        <br>
+
+        <div id="twobtn" style="margin-left:105px ;">
+          <button onclick="calculateLength()" class="btn" type="button">Calculate</button>
+          <button onclick="ResetLength()" class="btn">Reset</button>
+        </div>
+
+        <br><br>
+
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
